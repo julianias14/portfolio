@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="topnav">
+        <a href="https://github.com/julianias14" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/juliania-s" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://drive.google.com/file/d/1Cwsi3a2M-tqV7Z_mU2Q0shtFl6WDkTEp/view" target="_blank" rel="noopener noreferrer">Resume</a>
+        <a href="mailto:juliania.shyprykevych@rutgers.edu">Email</a>
+    </div>
+
+    <main class="interface">
+        <div class="hex-menu">
+            <div class="hud-environment" aria-hidden="true">
+                <div class="hud-orbit hud-orbit-1"></div>
+                <div class="hud-orbit hud-orbit-2"></div>
+                <div class="hud-orbit hud-orbit-3"></div>
+                <div class="hud-ticks hud-ticks-1"></div>
+                <div class="hud-ticks hud-ticks-2"></div>
+                <div class="hud-trace hud-trace-1"><span></span></div>
+                <div class="hud-trace hud-trace-2"><span></span></div>
+                <div class="hud-trace hud-trace-3"><span></span></div>
+                <div class="hud-scan"></div>
+            </div>
+
+            <div class="hud-core" aria-hidden="true">
+                <div class="hud-ring hud-ring-1"></div>
+                <div class="hud-ring hud-ring-2"></div>
+                <div class="hud-ring hud-ring-3"></div>
+                <div class="hud-ring hud-ring-4"></div>
+            </div>
+
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+            <div class="line line-4"></div>
+            <div class="line line-5"></div>
+            <div class="line line-6"></div>
+
+            <div class="hex hex-center">
+                <span>Juliania<br>Shyprykevych</span>
+            </div>
+
+            <button class="hex open slot-1" id="open-experience">Technical<br>Experience</button>
+            <button class="hex open slot-2" id="open-projects">Projects</button>
+            <button class="hex open slot-3" id="open-research">Research</button>
+            <button class="hex open slot-4" id="open-skills">Skills</button>
+            <button class="hex open slot-5" id="open-other">Leadership &<br>Involvement</button>
+            <button class="hex open slot-6" id="open-about">About</button>
+        </div>
+    </main>
+
+    <div class="modal-container" id="experience">
+        <div class="modal">
+            <button class="close" aria-label="Close modal">&times;</button>
+            <h1>Technical Experience</h1>
+
+            <div class="experience-timeline">
+
+                <article class="experience-entry">
+                    <div class="experience-card">
+                        <header class="experience-heading">
+                            <div class="experience-heading-main">
+                                <h2 class="experience-role">Undergraduate Researcher</h2>
+                                <p class="experience-org">Dr. Siddhartha Roy's Lab, Rutgers University</p>
+                            </div>
+                            <time class="experience-date">May 2026 — Present</time>
+                        </header>
+
+                        <div class="experience-body">
+                            <div class="experience-copy">
+                                <ul class="experience-points">
+                                    <li>Building a mobile app that uses smartphone images to estimate chlorine concentration in water samples in real-world testing scenarios</li>
+                                    <li>Diagnosed accuracy drop-off in existing regression models across concentration ranges, driving ongoing model improvements</li>
+                                    <li>Comparing regression (ElasticNet, Lasso) and CNN-based models, visualizing accuracy and overfitting tradeoffs under mobile deployment constraints</li>
+                                    <li>Collected 342 smartphone images across varying concentrations and lighting to expand and diversify the training dataset</li>
+                                </ul>
+
+                                <div class="experience-tech" aria-label="Technologies used">
+                                    <span>Python</span>
+                                    <span>PyTorch</span>
+                                    <span>NumPy</span>
+                                    <span>Pandas</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="experience-project-link" href="https://roy.rutgers.edu/" target="_blank" rel="noopener noreferrer">
+                            <span class="project-link-site">Siddhartha Roy's Group at Rutgers University</span>
+                            <span class="link-arrow" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="experience-entry">
+                    <div class="experience-card">
+                        <header class="experience-heading">
+                            <div class="experience-heading-main">
+                                <h2 class="experience-role">Autograder Developer | Data Structures Lead TA</h2>
+                                <p class="experience-org">Rutgers Department of Computer Science</p>
+                            </div>
+                            <time class="experience-date">Jan 2026 — Present</time>
+                        </header>
+
+                        <div class="experience-body">
+                            <div class="experience-copy">
+                                <ul class="experience-points">
+                                    <li>Writing test cases and autograders to verify 10,000+ student submissions per semester across 750+ students</li>
+                                    <li>Releasing ~12 labs and 3 major coding assignments using Carnegie Mellon's Autolab platform</li>
+                                    <li>Holding weekly office hours to support student learning</li>
+                                </ul>
+
+                                <div class="experience-tech" aria-label="Technologies used">
+                                    <span>Java</span>
+                                    <span>Autolab</span>
+                                    <span>Makefile</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="experience-entry">
+                    <div class="experience-card">
+                        <header class="experience-heading">
+                            <div class="experience-heading-main">
+                                <h2 class="experience-role">Fellow</h2>
+                                <p class="experience-org">Break Through Tech AI Program</p>
+                            </div>
+                            <time class="experience-date">May 2026 — Present</time>
+                        </header>
+
+                        <div class="experience-body">
+                            <div class="experience-copy">
+                                <ul class="experience-points">
+                                    <li>Selected from 3,000+ applicants for Cornell Tech's Break Through Tech AI Program</li>
+                                    <li>Built foundational ML/AI skills through an online certification from Cornell University</li>
+                                </ul>
+
+                                <div class="experience-tech" aria-label="Technologies used">
+                                    <span>Python</span>
+                                    <span>Pandas</span>
+                                    <span>Numpy</span>
+                                    <span>Scikit-Learn</span>
+                                    <span>Tensorflow</span>
+                                    <span>MatPlotlib</span>
+                                    <span>Seaborn</span>
+                                    <span>OpenCV</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="experience-entry">
+                    <div class="experience-card">
+                        <header class="experience-heading">
+                            <div class="experience-heading-main">
+                                <h2 class="experience-role">Java Developer &amp; Mentor</h2>
+                                <p class="experience-org">Assignment Guru</p>
+                            </div>
+                            <time class="experience-date">Jul–Aug 2025 · Jun–Jul 2026</time>
+                        </header>
+
+                        <div class="experience-body">
+                            <div class="experience-copy">
+                                <ul class="experience-points">
+                                    <li>Designed and developed Java programming assignments for 1,000+ Rutgers CS students, highlighting real-world applications of computing</li>
+                                    <li>Built sample answer keys and test cases in collaboration with peers and mentors</li>
+                                    <li>Illustrated 100+ pixel art graphics to boost assignment engagement</li>
+                                </ul>
+
+                                <div class="experience-tech" aria-label="Technologies used">
+                                    <span>Java</span>
+                                    <span>Java Swing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-container" id="projects">
+        <div class="modal">
+            <button class="close" aria-label="Close modal">&times;</button>
+            <h1>Projects</h1>
+
+            <div class="project-grid">
+
+                <article class="project-card project-card--lightsaber-lost">
+                    <header class="project-heading">
+                        <div class="project-heading-main">
+                            <p class="project-category">Coded an Assignment for Rutgers CS Curriculum</p>
+                            <h2 class="project-title">Lightsaber Lost</h2>
+                            <p class="project-org">Rutgers University Assignment Guru</p>
+                        </div>
+                        <time class="project-date">2026</time>
+                    </header>
+
+                    <div class="project-layout">
+                        <div class="project-copy">
+                            <p class="experience-summary">
+                                Designed a Star Wars–themed Java programming assignment teaching iterative sorting and searching algorithms to Rutgers CS students. The assignment has students help a Jedi character rebuild a corrupted archive system and locate a lightsaber's owner using insertion sort, selection sort, and binary search.
+                            </p>
+
+                            <ul class="experience-points">
+                                <li>Designed a Star Wars–themed Java programming assignment teaching iterative sorting and searching algorithms to Rutgers CS students.</li>
+                                <li>Built the assignment's object classes, CSV test datasets of varying sizes, and a visual driver program via Java Swing.</li>
+                                <li>Illustrated 100+ custom pixel art images to show the Jedi characters and lightsabers.</li>
+                                <li>Wrote reference implementations covering archive reconstruction, insertion sort, selection sort, and binary search.</li>
+                                <li>Designed a personalized mystery for each student by tying unique lightsaber clues to their NetID.</li>
+                            </ul>
+                            <p>Note: The full code for this project cannot be featured as it would expose the solution for students currently in the course. Please take a look at the screenshots of the assignment instead and the student-friendly GitHub code.</p>
+
+                            <div class="experience-tech" aria-label="Technologies used">
+                                <span>Java</span>
+                                <span>Java Swing</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a class="project-link" href="https://github.com/julianias14/LightsaberLostPublic" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+                            </div>
+                        </div>
+                    <figure class="experience-media project-media">
+                            <div class="experience-carousel" data-carousel>
+                                <button class="carousel-button carousel-button-prev" type="button" aria-label="Previous Lightsaber Lost image" data-carousel-prev></button>
+
+                                <div class="carousel-viewport">
+                                    <div class="carousel-track">
+                                        <div class="carousel-slide" data-caption="Task 1: Students need to rebuild the archives. To do this, they must Loop through the file and create new Jedi objects for each line. After creating the object, they must add it to an archives arraylist provided in the assignment. Here is a successful result after they load a csv file of Jedi objects, called archives.csv. There are 7 archive csv files to choose from.">
+                                            <img src="img/lightsaber_lost/lightsaberLostOne.png" alt="Lightsaber Lost screenshot 1">
+                                        </div>
+                                        <div class="carousel-slide" data-caption="Task 2: Students need to build a method that will sort the lightsabers in the chosen csv files by color. To do this, they must write code for selection sort and sort the lightsabers based on alphabetical order of their colors. Here is a successful result after they complete the method and press the button.">
+                                            <img src="img/lightsaber_lost/lightsaberLostTwo.png" alt="Lightsaber Lost screenshot 2">
+                                        </div>
+                                        <div class="carousel-slide" data-caption="Task 3: Students need to build a method that will extract a specific color from the csv file. To do this, they must create a new ColorRange object and utilize binary search to search through the archives arraylist for the starting and ending indices of a color. They must find the starting and ending indices of the specific color within the ArrayList and mark it within the ColorRange starting index and ending index attributes. Here is a successful result after they complete the method, choose a color(in this case, yellow, and press the button.">
+                                            <img src="img/lightsaber_lost/lightsaberLostThree.png" alt="Lightsaber Lost screenshot 3">
+                                        </div>
+                                        <div class="carousel-slide" data-caption="Task 4: Students need to build a method that will sort the lightsabers in the chosen color in alphabetical order based on their hilt materials. At this point, the ArrayList turns into an Array in the internal Driver and are given to students as a parameter in the method. They are also provided incorrect code for the method that they must debug using the debugger. Here is a successful result after they complete the method and press the button.">
+                                            <img src="img/lightsaber_lost/lightsaberLostFour.png" alt="Lightsaber Lost screenshot 4">
+                                        </div>
+                                        <div class="carousel-slide" data-caption="Task 5: Students need to build a method that will showcase a Jedi based on the hilt material they choose. To complete this method, they must utilize binary search on the array to find the hilt that matches the lightsaber's owner. They can also explore the dataset and choose other hilt materials to see other Jedi.">
+                                            <img src="img/lightsaber_lost/lightsaberLostFive.png" alt="Lightsaber Lost screenshot 5">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="carousel-button carousel-button-next" type="button" aria-label="Next Lightsaber Lost image" data-carousel-next></button>
+
+                                <div class="carousel-status" aria-live="polite">
+                                    <span data-carousel-current>1</span>
+                                    <span class="carousel-divider">/</span>
+                                    <span data-carousel-total>5</span>
+                                </div>
+                            </div>
+
+                                                    <figcaption class="carousel-caption-below" data-carousel-caption aria-live="polite"></figcaption>
+</figure>
+                    </div>
+                </article>
+
+                <article class="project-card project-card--pixel-paws">
+                    <header class="project-heading">
+                        <div class="project-heading-main">
+                            <p class="project-category">Hackathon Project</p>
+                            <h2 class="project-title">Pixel Paws</h2>
+                            <p class="project-org">Rutgers IEEE × HART Buildathon</p>
+                        </div>
+                        <time class="project-date">2026</time>
+                    </header>
+
+                    <div class="project-copy pixel-paws-copy">
+                            <p class="experience-summary">
+                                A CS learning platform that plays like a cross between Duolingo and a Tamagotchi —
+                                pairing bite-sized Java, Python, and HTML questions with a physical Arduino pixel
+                                pet that grows and reacts as you learn, built with a small team.
+                            </p>
+
+                            <ul class="experience-points">
+                                <li>Designed an adaptive question system that adjusts difficulty based on performance, inspired by spaced-repetition tools like Anki</li>
+                                <li>Illustrated and animated all pixel art for the pet, translating its mood and growth stages into custom LED display animations</li>
+                                <li>Built and programmed the Arduino-powered hardware, bridging real-time progress tracking and question logic between software and the physical pet</li>
+                            </ul>
+
+                            <div class="experience-tech" aria-label="Technologies used">
+                                <span>Arduino</span>
+                                <span>JavaScript</span>
+                                <span>Python</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Firebase</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a class="project-link" href="https://devpost.com/software/pixel-paws" target="_blank" rel="noopener noreferrer">Devpost</a>
+                                <a class="project-link" href="https://playpixelpaws.vercel.app" target="_blank" rel="noopener noreferrer">Play the Game</a>
+                                <a class="project-link" href="https://github.com/julianias14/pixel-paws" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+                            </div>
+                    </div>
+                    <br>
+
+                    <figure class="experience-media project-media pixel-paws-media">
+                        <div class="experience-carousel" data-carousel>
+                            <button class="carousel-button carousel-button-prev" type="button" aria-label="Previous Pixel Paws image" data-carousel-prev></button>
+
+                            <div class="carousel-viewport">
+                                <div class="carousel-track">
+                                    <div class="carousel-slide" data-caption="Pixel Paws dashboard.">
+                                            <img src="img/pixel_paws/pixelPawsOne.png" alt="Pixel Paws application dashboard">
+                                        </div>
+                                    <div class="carousel-slide" data-caption="Teenage pixel-pet stage.">
+                                            <img src="img/pixel_paws/TeenBlackCatNeutral.png" alt="Pixel Paws teenage black cat stage">
+                                        </div>
+                                    <div class="carousel-slide" data-caption="Adult pixel-pet stage.">
+                                            <img src="img/pixel_paws/AdultBlackCatNeutral.png" alt="Pixel Paws adult black cat stage">
+                                        </div>
+                                </div>
+                            </div>
+
+                            <button class="carousel-button carousel-button-next" type="button" aria-label="Next Pixel Paws image" data-carousel-next></button>
+
+                            <div class="carousel-status" aria-live="polite">
+                                <span data-carousel-current>1</span>
+                                <span class="carousel-divider">/</span>
+                                <span data-carousel-total>3</span>
+                            </div>
+                        </div>
+
+                                                <figcaption class="carousel-caption-below" data-carousel-caption aria-live="polite"></figcaption>
+</figure>
+                </article>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal-container" id="research">
+        <div class="modal research-modal">
+            <button class="close" aria-label="Close modal">&times;</button>
+            <h1>Research</h1>
+
+            <div class="research-copy">
+                <h2>Low-Cost AI/ML Water Quality Monitoring</h2>
+                <h3>Rutgers RAD Collaboratory (May—Jul 2026) → School of Environmental and Biological Sciences, under Dr. Siddhartha Roy (Aug 2026—Present) Role: Undergraduate Researcher</h3>
+
+                <h4>Overview</h4>
+                <p>Spectrophotometers are a widely-used tool for detecting contaminants in water (such as chlorine) but they're expensive and impractical for field use, especially for rural communities who could benefit from water quality testing. Too little chlorine in water can leave it unsafe due to a lack of protection againt bacteria, while too much poses health risks to people who consume it. My research explores whether computer vision and machine learning can replace them: training models to read contaminant concentrations directly from photos, cheaply and accurately enough to work outside a lab. I joined this project in May 2026 through Rutgers' Chancellor's Signature Initiatives Summer Undergraduate Research Fellowship, a competitive program pairing undergrads with faculty-led research. When the fellowship wrapped in July, my PI gave me the opportunity to stay on, and I've continued the work since. The work is now conducted within School of Environmental and Biological Sciences rather than New Brunswick Office for Research, where the fellowship was hosted.</p>
+
+                <h4>What I've Built</h4>
+                <ul>
+                    <li>Trained and iterated on CV/ML models that estimate contaminant concentration from images, aiming to match spectrophotometer-level accuracy at a fraction of the cost.</li>
+                    <li>Generated custom training datasets from lab experiments, controlling for lighting, angle, and sample conditions to keep the data usable for real-world deployment, not just controlled settings.</li>
+                    <li>Optimized image-based quantification algorithms in Python/scikit-learn, testing preprocessing and feature-extraction approaches to improve model reliability across varied lighting and camera conditions.</li>
+                </ul>
+
+                <h4>Current Focus</h4>
+                <ul>
+                    <li>Improving model accuracy through iterative training/testing across different dataset compositions.</li>
+                    <li>Reading and applying findings from published literature to refine our approach.</li>
+                    <li>Building and hardening the mobile app for real field deployment. I'm working on moving it from a research prototype toward something usable outside the lab.</li>
+                </ul>
+            </div>
+
+            <div class="research-visuals">
+                <figure class="research-poster">
+                    <div class="research-poster-frame">
+                        <img src="img/research/csi_surf_poster.png" alt="Research poster for Low-Cost AI/ML Water Quality Monitoring">
+                    </div>
+                    <figcaption>Research Poster, presented at the CSI SURF Symposium on July 31st, 2026.</figcaption>
+                </figure>
+
+                <figure class="research-carousel-media">
+                    <div class="experience-carousel research-carousel" data-carousel>
+                        <button class="carousel-button carousel-button-prev" type="button" aria-label="Previous research image" data-carousel-prev></button>
+
+                        <div class="carousel-viewport">
+                            <div class="carousel-track">
+                                <div class="carousel-slide" data-caption="My Lightning Talk Slideshow, presented for the CSI SURF fellows and faculty mentors.">
+                                    <img src="img/research/lightningTalkOne.png" alt="Water quality research image 1">
+                                </div>
+
+                                <div class="carousel-slide" data-caption="I explained the purpose of our research and context of spectrophotomers.">
+                                    <img src="img/research/lightningTalkTwo.png" alt="Water quality research image 2">
+                                </div>
+
+                                <div class="carousel-slide" data-caption="Here you can see the outline of our process and some sample images.">
+                                    <img src="img/research/lightningTalkThree.png" alt="Water quality research image 3">
+                                </div>
+
+                                <div class="carousel-slide" data-caption="These were some of our findings and future directions as of July 2026.">
+                                    <img src="img/research/lightningTalkFour.png" alt="Water quality research image 4">
+                                </div>
+
+                                <div class="carousel-slide" data-caption="Thanks for checking this out!">
+                                    <img src="img/research/lightningTalkFive.png" alt="Water quality research image 5">
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="carousel-button carousel-button-next" type="button" aria-label="Next research image" data-carousel-next></button>
+
+                        <div class="carousel-status" aria-live="polite">
+                            <span data-carousel-current>1</span>
+                            <span class="carousel-divider">/</span>
+                            <span data-carousel-total>3</span>
+                        </div>
+                    </div>
+
+                    <figcaption class="carousel-caption-below" data-carousel-caption aria-live="polite"></figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-container" id="skills">
+    <div class="modal skills-modal">
+
+        <button class="close" aria-label="Close modal">&times;</button>
+
+        <h1>Skills</h1>
+
+        <div class="skills-dashboard">
+
+            <section class="skill-group">
+                <div class="skill-group-heading">
+                    <span class="skill-number">01</span>
+                    <h2>Programming Languages</h2>
+                </div>
+
+                <div class="skill-tags">
+                    <span>Java</span>
+                    <span>Python</span>
+                    <span>JavaScript</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>SQL</span>
+                </div>
+            </section>
+
+            <section class="skill-group">
+                <div class="skill-group-heading">
+                    <span class="skill-number">02</span>
+                    <h2>Machine Learning & Data</h2>
+                </div>
+
+                <div class="skill-tags">
+                    <span>PyTorch</span>
+                    <span>TensorFlow</span>
+                    <span>scikit-learn</span>
+                    <span>YOLO</span>
+                    <span>OpenCV</span>
+                    <span>NumPy</span>
+                    <span>Pandas</span>
+                    <span>Matplotlib</span>
+                    <span>Seaborn</span>
+                </div>
+            </section>
+
+            <section class="skill-group">
+                <div class="skill-group-heading">
+                    <span class="skill-number">03</span>
+                    <h2>Web & UI</h2>
+                </div>
+
+                <div class="skill-tags">
+                    <span>React</span>
+                    <span>Java Swing</span>
+                </div>
+            </section>
+
+            <section class="skill-group">
+                <div class="skill-group-heading">
+                    <span class="skill-number">04</span>
+                    <h2>Tools & Platforms</h2>
+                </div>
+
+                <div class="skill-tags">
+                    <span>Git</span>
+                    <span>GitHub</span>
+                    <span>Google Colab</span>
+                    <span>Kaggle</span>
+                    <span>Arduino</span>
+                    <span>VS Code</span>
+                </div>
+            </section>
+
+        </div>
+    </div>
+</div>
+
+    <div class="modal-container" id="other">
+        <div class="modal">
+            <button class="close" aria-label="Close modal">&times;</button>
+            <h1>Leadership &amp; Involvement</h1>
+            <div class="experience-timeline">
+
+                <article class="experience-entry">
+                    <div class="experience-card">
+                        <header class="experience-heading">
+                            <div class="experience-heading-main">
+                                <h2 class="experience-role">Data Structures Lead Teaching Assistant — Autolab</h2>
+                                <p class="experience-org">Rutgers Department of Computer Science</p>
+                            </div>
+                            <time class="experience-date">Jan 2026 — Present</time>
+                        </header>
+
+                        <div class="experience-body">
+                            <div class="experience-copy">
+                                <ul class="experience-points">
+                                    <li>One of three Lead TAs for a 750+ student course, specifically responsible for the Autolab grading infrastructure.</li>
+                                    <li>Build the autograders for each assignment and release ~12 labs and 3 major assignments per semester on Autolab.</li>
+                                    <li>Hold weekly office hours, helping students debug code, work through course concepts, and clarify assignment requirements.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="experience-entry">
+                    <div class="experience-card">
+                        <header class="experience-heading">
+                            <div class="experience-heading-main">
+                                <h2 class="experience-role">Code Coach</h2>
+                                <p class="experience-org">theCoderSchool Montgomery</p>
+                            </div>
+                            <time class="experience-date">Feb 2025 — Present</time>
+                        </header>
+
+                        <div class="experience-body">
+                            <div class="experience-copy">
+                                <ul class="experience-points">
+                                    <li>Working privately with students of varying skills and ages (elementary, middle, and high schoolers) to create coding projects.</li>
+                                    <li>Teaching coding concepts to advance students' learning based on their needs and interests and providing a personalized and unique experience for each student.</li>
+                                    <li>Ensuring each student has a project completed within four months and writing notes and summaries of each lesson to be sent to the parents.</li>
+                                    <li>Working in a 2:1 and 1:1 teaching ratio with an individualized lesson for each student.</li>
+                                    <li>Communicating with parents after sessions to share updates on their child's progress.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="experience-entry">
+                    <div class="experience-card">
+                        <header class="experience-heading">
+                            <div class="experience-heading-main">
+                                <h2 class="experience-role">Computer Science Learning Assistant</h2>
+                                <p class="experience-org">Rutgers Learning Centers</p>
+                            </div>
+                            <time class="experience-date">Aug 2025 — Dec 2025</time>
+                        </header>
+
+                        <div class="experience-body">
+                            <div class="experience-copy">
+                                <ul class="experience-points">
+                                    <li>Ran 100+ minutes of weekly group sessions for CS111 (Introduction to CS) students, reinforcing core programming concepts outside of lecture.</li>
+                                    <li>Guided college-level students to gain proficiency in Java, gain debugging and analyzing skills, and practice writing programs and algorithms.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="experience-entry">
+                    <div class="experience-card">
+                        <header class="experience-heading">
+                            <div class="experience-heading-main">
+                                <h2 class="experience-role">Den Leader (Hnizdova)</h2>
+                                <p class="experience-org">Plast Ukrainian Scouting Organization</p>
+                            </div>
+                            <time class="experience-date">Sep 2025 — Present</time>
+                        </header>
+
+                        <div class="experience-body">
+                            <div class="experience-copy">
+                                <ul class="experience-points">
+                                    <li>Lead weekly educational and recreational activities for a group of children ages 6—11, focusing on leadership, teamwork, and cultural education.</li>
+                                    <li>Manage parent authorization paperwork and other program logistics to keep the group compliant with organizational requirements.</li>
+                                    <li>Help coordinate larger, organization-wide events spanning multiple dens.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="experience-entry">
+                    <div class="experience-card">
+                        <header class="experience-heading">
+                            <div class="experience-heading-main">
+                                <h2 class="experience-role">Teaching Assistant (Game Development)</h2>
+                                <p class="experience-org">Girls Who Code</p>
+                            </div>
+                            <time class="experience-date">Jun 2025 — Aug 2025</time>
+                        </header>
+
+                        <div class="experience-body">
+                            <div class="experience-copy">
+                                <ul class="experience-points">
+                                    <li>Led a 15-student advisory group, building a supportive community for underrepresented students in tech.</li>
+                                    <li>Co-ran daily p5.js sessions for a 70-student cohort as part of a national teaching team.</li>
+                                    <li>Held regular student hours to debug code and support project progress.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+        </div>
+    </div>
+
+    <div class="modal-container" id="about">
+        <div class="modal">
+            <button class="close" aria-label="Close modal">&times;</button>
+            <h1>About</h1>
+            <h3>I'm a Computer Science and Cognitive Science student at Rutgers University with a focus on machine learning and applied software development.</h3>
+            <h4>Right now, I'm working as an undergraduate researcher in Dr. Siddhartha Roy's lab, developing a mobile application that uses machine learning to estimate chlorine concentration from smartphone images. I'm also a Break Through Tech AI Fellow and serve as a Lead TA for Data Structures at Rutgers, where I build autograders and support 750+ students each semester.</h4>
+            <h4>
+                I'm currently looking for software engineering and machine learning internship opportunities for
+                summer 2027. Feel free to reach out to me at
+                <a href="mailto:juliania.shyprykevych@rutgers.edu" class="inline-link">juliania.shyprykevych@rutgers.edu</a>
+                or explore my work below.
+            </h4>
+            <h5>Bachelor of Science in Computer Science; Bachelor of Arts in Cognitive Science | Expected Graduation May 2028 | 3.6 GPA | New York City Metropolitan Area</h5>
+        </div>
+    </div>
+
+    <script src="main.js" defer></script>
+</body>
+</html>
