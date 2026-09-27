@@ -2292,15 +2292,20 @@ body::after {
     object-fit: contain;
 }
 
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
 
+.about-text {
+    flex: 1;
+}
 
-@media (max-width: 760px) {
-    #research {
-        --modal-width: min(900px, 94vw);
-    }
-
-    .research-carousel .carousel-slide img {
-        height: min(430px, 56vh);
-        max-height: 430px;
-    }
+.profile-pic {
+    width: 220px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 0;
+    flex-shrink: 0;
 }
